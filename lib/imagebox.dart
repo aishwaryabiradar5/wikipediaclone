@@ -9,11 +9,12 @@ class ImageBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
+      children: [Spacer(),
         Container(
-          height: 200,
-          width: 400,
-          child: Text('Image'),
+          height: 300,
+          width: 200,
+          child: Image(fit: BoxFit.cover,
+            image:AssetImage('assets/rightSidePic.jpg')),
           color: Color.fromARGB(255, 179, 179, 180),
         ),
         Flexible(
